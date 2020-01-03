@@ -1,0 +1,10 @@
+<!-- <p>delete works!</p> -->
+
+<div class="divDeleteFlights">
+    <label >Enter the FLIGHT ID to delete a flight:</label>
+    <input class="form-control" type="text" [(ngModel)]="del.Fd_Id">
+    <br>
+    <button class="alert alert-danger" (click)="deleteFlightDetails()">Delete Flight</button>
+    <h5 style="color: green;">    {{result}} 
+    </h5>
+</div>

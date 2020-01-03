@@ -1,0 +1,301 @@
+.position
+{
+    position: relative;;
+    float: left;
+    left: 9%;
+
+}
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+
+
+  }
+  
+  input[type=text]{
+    width: 50%;
+  }
+.backgroundColor {
+    /* background-color: #FFFAFA; */
+    color:black;
+}
+
+  input[type=number]
+  {
+    width: 50px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    
+  }
+  input[type=number]
+  {
+    width: 50%;
+  }
+  .drop{
+    width: 50px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+
+  }
+  .drop
+  {
+      width: 50%;
+  }
+  /* 22 */
+.title
+{
+    color: purple;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+  }
+  
+  body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 60px;
+    width: 210px;
+    opacity: 1;
+    background-color: #ffffff;
+    border: 1px solid purple;
+  }
+  button span {
+    color:purple;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+  }
+  button:hover {
+    animation: rotate 0.7s ease-in-out both;
+  }
+  button:hover span {
+    animation: storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    25% {
+      transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+    50% {
+      transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+  @keyframes storm {
+    0% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+    25% {
+      transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+    50% {
+      transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+    75% {
+      transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  }
+  
+
+  
+
+
+/**/
+
+
+/*
+* By Jose Aguinaga
+* http://jjperezaguinaga.com
+*/
+@import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
+body {
+  background: radial-gradient(center, ellipse cover, #ffffff 0%, #f2efd9 100%);
+}
+
+@keyframes rotate-right {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-left {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes hover {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes pull {
+  0% {
+    transform: scaleY(1);
+  }
+  40% {
+    transform: scaleY(1.01);
+  }
+  60% {
+    transform: scaleY(0.99);
+  }
+  80% {
+    transform: scaleY(1.01);
+  }
+  100% {
+    transform: scaleY(0.99);
+  }
+  80% {
+    transform: scaleY(1.01);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+#airplane2, #airplane1 {
+  transform: translate3d(0, 0, 0);
+  transform-origin: 200px 200px;
+  transform: translate3d(0, 0, 0);
+  animation: rotate-right 60s linear 0s infinite;
+}
+
+#countryObjects {
+  transform: translate3d(0, 0, 0);
+  transform-origin: 200px 200px;
+  transform: translate3d(0, 0, 0);
+  animation: rotate-right 240s linear 0s infinite;
+}
+
+#floatingGlobe {
+  transform: translate3d(0, 0, 0);
+  transform-origin: 200px 200px;
+  transform: translate3d(0, 0, 0);
+  animation: rotate-left 360s linear 0s infinite;
+}
+
+#globe {
+  transform: translate3d(0, 0, 0);
+  animation: hover 0s linear 0s infinite;
+}
+
+#windmill {
+  transform: translate3d(0, 0, 0);
+  transform-origin: 331px 201px;
+  transform: translate3d(0, 0, 0);
+  animation: rotate-right 2s linear 0s infinite;
+}
+
+#cloud1 {
+  transform: translate3d(0, 0, 0);
+  animation: hover 3s linear 1s infinite;
+}
+
+#cloud2 {
+  transform: translate3d(0, 0, 0);
+  animation: hover 3s linear 2s infinite;
+}
+
+#cloud3 {
+  transform: translate3d(0, 0, 0);
+  animation: hover 3s linear 3s infinite;
+}
+
+#circle1 {
+  transform: translate3d(0, 0, 0);
+  transform-origin: 200px 200px;
+  transform: translate3d(0, 0, 0);
+  animation: rotate-right 12s linear 0s infinite;
+}
+
+#circle2 {
+  transform: translate3d(0, 0, 0);
+  transform-origin: 200px 200px;
+  transform: translate3d(0, 0, 0);
+  animation: rotate-left 24s linear 0s infinite;
+}
+
+#circle3 {
+  transform: translate3d(0, 0, 0);
+  transform-origin: 200px 200px;
+  transform: translate3d(0, 0, 0);
+  animation: rotate-right 12s linear 0s infinite;
+}
+
+#circle4 {
+  transform: translate3d(0, 0, 0);
+  transform-origin: 200px 200px;
+  transform: translate3d(0, 0, 0);
+  animation: rotate-left 24s linear 0s infinite;
+}
+
+#circle5 {
+  transform: translate3d(0, 0, 0);
+  transform-origin: 200px 200px;
+  transform: translate3d(0, 0, 0);
+  animation: rotate-right 12s linear 0s infinite;
+}
+.back{
+    width: 60%;
+    height: 60%;
+    position: relative;
+    float:right;
+    right:0%;
+    top: 2%;
+}
+

@@ -1,0 +1,10 @@
+.divInsertFlights{
+    width: 500px;
+    height: 700px;
+    position: relative;
+    left: 30%;
+}
+label{
+    font-size: 18px;
+    color: blue;
+}

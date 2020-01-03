@@ -1,0 +1,15 @@
+.divDeleteFlights{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    left: 30%;
+    margin-top: 10%;
+}
+.alert-danger{
+    position: relative;
+     width: 500px;
+ }
+label{
+    font-size: 22px;
+    color: blue;
+}
